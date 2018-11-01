@@ -7,10 +7,9 @@
         
         <script>
             var loc = window.location.toString(),
-                params = loc.split('?')[1],
-                p = document.getElementById('urlParam');
-
-            p.innerHtml = params;
+                params = loc.split('?')[1];
+            
+            document.getElementById('urlParam').innerHTML = params;
         </script>
     </body>
 </html>
