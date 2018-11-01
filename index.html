@@ -3,5 +3,14 @@
     <body>
         <h1>Hello World!</h1>
         <p>I'm hosted with GitHub pages.</p>
+        <p id="urlParam"></p>
+        
+        <script>
+            var loc = window.location.toString(),
+                params = loc.split('?')[1],
+                p = document.getElementById('urlParam');
+
+            p.innerHtml = params;
+        </script>
     </body>
 </html>
